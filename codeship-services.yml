@@ -1,6 +1,6 @@
 heroku:
   build:
-    image: despinalr/tasklist
+    image: codeship/tasklist
     dockerfile: Dockerfile
   environment:
     MONGO_VAR: example-mongo

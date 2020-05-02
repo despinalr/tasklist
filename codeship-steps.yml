@@ -1,3 +1,3 @@
-- name: Do Nothing
+- name: Run Image
   service: heroku
-  command: echo "Deploy here!"
+  command: docker run -dp 80:3000 codeship/tasklist
