@@ -2,6 +2,8 @@ heroku-deployment:
   image: codeship/heroku-deployment
   encrypted_env_file:
     - heroku-deployment.env.encrypted
+  volumes:
+    - ./:/deploy
 
 app:
   build:
@@ -9,7 +11,7 @@ app:
     dockerfile: Dockerfile
   encrypted_env_file:
     - heroku-deployment.env.encrypted
-    
+
 heroku-dockercfg-generator:
   image: codeship/heroku-dockercfg-generator
   add_docker: true
