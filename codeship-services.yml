@@ -1,4 +1,17 @@
-heroku:
+heroku-deployment:
+  image: codeship/heroku-deployment
+  encrypted_env_file:
+    - heroku-deployment.env.encrypted
+
+app:
   build:
-    image: codeship/tasklist
+    image: registry.heroku.com/tasklist/web
     dockerfile: Dockerfile
+  encrypted_env_file:
+    - heroku-deployment.env.encrypted
+    
+heroku-dockercfg-generator:
+  image: codeship/heroku-dockercfg-generator
+  add_docker: true
+  encrypted_env_file:
+    - heroku-deployment.env.encrypted

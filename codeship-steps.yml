@@ -1,3 +1,10 @@
-- name: Deploy
+- name: Push Image
+  service: app
+  type: push
+  image_name: registry.heroku.com/tasklist/web
+  registry: registry.heroku.com
+  dockercfg_service: heroku-dockercfg-generator
+
+- name: Trigger Release
   service: heroku-deployment
-  command: heroku container:release --app codeship/tasklist
+  command: heroku container:release --app tasklist web

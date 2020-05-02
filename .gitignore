@@ -1,3 +1,7 @@
+#codeship
+*.aes
+env
+
 # Logs
 logs
 *.log
