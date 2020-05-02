@@ -1,0 +1,3 @@
+- name: Do Nothing
+  service: example
+  command: echo "Deploy here!"
