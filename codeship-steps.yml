@@ -5,7 +5,7 @@
   registry: registry.heroku.com
   dockercfg_service: heroku-dockercfg-generator
 
-- name: Trigger Release
-  service: heroku-deployment
-  command: heroku container:release --app tasklist web
-  dockercfg_service: heroku-dockercfg-generator
+#- name: Trigger Release
+#  service: heroku-deployment
+#  command: heroku container:release --app tasklist web
+#  dockercfg_service: heroku-dockercfg-generator
