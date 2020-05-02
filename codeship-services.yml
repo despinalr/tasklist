@@ -1,6 +1,6 @@
-heroku-deployment:
-  image: codeship/heroku-deployment
-  encrypted_env_file: heroku-deployment.env.encrypted
+#heroku-deployment:
+#  image: codeship/heroku-deployment
+#  encrypted_env_file: heroku-deployment.env.encrypted
 
 app:
   build:
