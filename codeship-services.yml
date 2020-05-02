@@ -2,6 +2,3 @@ heroku:
   build:
     image: codeship/tasklist
     dockerfile: Dockerfile
-    add_docker: true
-  environment:
-    MONGO_VAR: example-mongo
