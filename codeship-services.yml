@@ -16,3 +16,7 @@ app:
   build:
     image: despinalr/tasklist
     dockerfile: Dockerfile
+
+tasklist_generator:
+  image: codeship/myservice-dockercfg-generator
+  encrypted_env_file: dockercfg.encrypted
