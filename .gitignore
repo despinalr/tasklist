@@ -1,6 +1,7 @@
 #codeship
 *.aes
 env
+dockercfg
 
 # Logs
 logs
