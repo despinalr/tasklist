@@ -1,6 +1,8 @@
 heroku-deployment:
   image: despinalr/tasklist
   encrypted_env_file: heroku-deployment.env.encrypted
+  volumes:
+    - ./:/deploy
 
 #app:
 #  build:
