@@ -17,6 +17,6 @@
 
 - name: Trigger Release
   service: heroku-deployment
-  command: heroku container:release --app despinalr/tasklist
+  #command: heroku container:release --app despinalr/tasklist
   encrypted_dockercfg_path: dockercfg.encrypted
   #dockercfg_service: heroku-dockercfg-generator
