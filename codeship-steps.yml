@@ -11,13 +11,14 @@
   encrypted_dockercfg_path: dockercfg.encrypted
   #dockercfg_service: tasklist_generator
 
-- service: app
-  command: /bin/true
-  encrypted_dockercfg_path: dockercfg.encrypted
+#- service: app
+#  command: /bin/true
+#  encrypted_dockercfg_path: dockercfg.encrypted
 
-- name: Trigger Release
+- name: deploy
   service: heroku-deployment
 #  command: heroku container:release --app despinalr/tasklist
-  command: node server.js
+#  command: node server.js
+  command: codeship_heroku deploy /deploy heroku-deployment
   encrypted_dockercfg_path: dockercfg.encrypted
   #dockercfg_service: heroku-dockercfg-generator
