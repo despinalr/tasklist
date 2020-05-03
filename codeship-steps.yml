@@ -6,4 +6,4 @@
 - name: deploy
   service: heroku-deployment
   tag: master
-  command: codeship_heroku deploy /deploy /usr/src/app
+  command: codeship_heroku deploy /deploy tasklist
