@@ -17,8 +17,9 @@
 
 - name: deploy
   service: heroku-deployment
+  tag: master
 #  command: heroku container:release --app despinalr/tasklist
 #  command: node server.js
-  command: codeship_heroku deploy /deploy heroku-deployment
-  encrypted_dockercfg_path: dockercfg.encrypted
+  command: npm start
+  #encrypted_dockercfg_path: dockercfg.encrypted
   #dockercfg_service: heroku-dockercfg-generator
