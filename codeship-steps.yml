@@ -6,4 +6,4 @@
 - name: deploy
   service: heroku-deployment
   tag: master
-  command: codeship_heroku deploy /deploy tasklist
+  command: codeship_heroku deploy /deploy davidetasklist
