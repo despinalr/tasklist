@@ -1,25 +1,9 @@
-#- name: Push Image
-#  service: app
-#  type: push
-#  image_name: registry.heroku.com/tasklist/web
-#  registry: registry.heroku.com
-#  dockercfg_service: heroku-dockercfg-generator
-
 - type: push
   service: app
   image_name: despinalr/tasklist
   encrypted_dockercfg_path: dockercfg.encrypted
-  #dockercfg_service: tasklist_generator
-
-#- service: app
-#  command: /bin/true
-#  encrypted_dockercfg_path: dockercfg.encrypted
 
 - name: deploy
   service: heroku-deployment
   tag: master
-#  command: heroku container:release --app despinalr/tasklist
-#  command: node server.js
-  command: npm start
-  #encrypted_dockercfg_path: dockercfg.encrypted
-  #dockercfg_service: heroku-dockercfg-generator
+  command: codeship_heroku deploy /deploy tasklist
