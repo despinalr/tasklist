@@ -13,5 +13,9 @@
 - type: push
   service: app
   image_name: despinalr/tasklist
-  dockercfg_service: tasklist_generator
-  #encrypted_dockercfg_path: dockercfg.encrypted
+  encrypted_dockercfg_path: dockercfg.encrypted
+  #dockercfg_service: tasklist_generator
+
+- service: app
+  command: /bin/true
+  encrypted_dockercfg_path: dockercfg.encrypted
