@@ -1,14 +1,12 @@
 var express = require('express');
+var mongo = require('./mongo');
 var router = express.Router();
 
 // Get all Tasks
 router.get('/tasks', function(req, res, next) {
-    var obj = {
-        val1: 1,
-        val2: "dos",
-        val3: true
-    };
-    res.send(obj);
+    mongo.tasks("david.espinal.ruiz@gmail.com", function(tasks) {
+        res.send(tasks);
+    });
 });
 
 module.exports = router;
