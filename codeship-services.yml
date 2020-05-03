@@ -6,7 +6,7 @@ app:
   build:
     image: registry.heroku.com/tasklist/web
     dockerfile: Dockerfile
-  encrypted_env_file: heroku-deployment.env.encrypted
+    encrypted_env_file: heroku-deployment.env.encrypted
 
 heroku-dockercfg-generator:
   image: codeship/heroku-dockercfg-generator
