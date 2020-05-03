@@ -18,5 +18,5 @@ app:
     dockerfile: Dockerfile
 
 tasklist_generator:
-  image: codeship/myservice-dockercfg-generator
+  image: codeship/tasklist-dockercfg-generator
   encrypted_env_file: dockercfg.encrypted
