@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tasklist
+  labels:
+    app: tasklist
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: tasklist
+  template:
+    metadata:
+      labels:
+        app: tasklist
+    spec:
+      containers:
+      - name: tasklist
+        image: despinalr/tasklist
