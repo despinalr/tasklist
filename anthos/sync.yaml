@@ -1,13 +1,13 @@
-apiVersion: configsync.gke.io/v1alpha1
-kind: RepoSync
-metadata:
-  name: repo-sync
-  namespace: tasklist
-spec:
-  sourceFormat: unstructured
-  git:
-    repo: https://github.com/despinalr/tasklist
-    branch: master
-    period: 60s
-    dir: k8s
-    auth: none
+#apiVersion: configsync.gke.io/v1alpha1
+#kind: RepoSync
+#metadata:
+#  name: repo-sync
+#  namespace: tasklist
+#spec:
+#  sourceFormat: unstructured
+#  git:
+#    repo: https://github.com/despinalr/tasklist
+#    branch: master
+#    period: 60s
+#    dir: k8s
+#    auth: none
