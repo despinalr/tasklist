@@ -1,0 +1,12 @@
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: gamestore
+spec:
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/despinalr/tasklist.git
+    branch: master
+    period: 60s
+    auth: none
