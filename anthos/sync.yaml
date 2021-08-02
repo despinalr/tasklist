@@ -6,7 +6,7 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    repo: https://github.com/despinalr/tasklist.git
+    repo: https://github.com/despinalr/tasklist
     branch: master
     period: 60s
     auth: none
