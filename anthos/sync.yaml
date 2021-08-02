@@ -9,4 +9,5 @@ spec:
     repo: https://github.com/despinalr/tasklist
     branch: master
     period: 60s
+    dir: k8s
     auth: none
