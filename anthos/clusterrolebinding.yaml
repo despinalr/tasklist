@@ -1,13 +1,13 @@
-kind: RoleBinding
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: syncs-repo
-  namespace: tasklist
-subjects:
-- kind: ServiceAccount
-  name: ns-reconcilier-tasklist
-  namespace: config-management-system
-roleRef:
-  kind: ClusterRole
-  name: repo-sync
-  apiGroup: rbac.authorization.k8s.io
+#kind: RoleBinding
+#apiVersion: rbac.authorization.k8s.io/v1
+#metadata:
+#  name: syncs-repo
+#  namespace: tasklist
+#subjects:
+#- kind: ServiceAccount
+#  name: ns-reconcilier-tasklist
+#  namespace: config-management-system
+#roleRef:
+#  kind: ClusterRole
+#  name: repo-sync
+#  apiGroup: rbac.authorization.k8s.io

@@ -1,7 +1,8 @@
 apiVersion: configsync.gke.io/v1alpha1
-kind: RepoSync
+kind: RootSync
 metadata:
-  name: repo-sync
+  name: root-sync
+  namespace: config-management-system
 spec:
   sourceFormat: unstructured
   git:
