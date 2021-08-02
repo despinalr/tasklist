@@ -2,7 +2,7 @@ apiVersion: configsync.gke.io/v1alpha1
 kind: RepoSync
 metadata:
   name: repo-sync
-  namespace: gamestore
+  namespace: default
 spec:
   sourceFormat: unstructured
   git:
