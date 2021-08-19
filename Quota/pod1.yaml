@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tasklist-manualpod1
+  namespace: quotaexample
+spec:
+  containers:
+  - name: tasklist
+    image: despinalr/tasklist
+    resources:
+      requests:
+        cpu: 20m
+        memory: 10Mi
+      limits:
+        cpu: 20m
+        memory: 10Mi

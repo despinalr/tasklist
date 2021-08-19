@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: mem-cpu-demo
+  namespace: quotaexample
+spec:
+  hard:
+    requests.cpu: "100m"
+    requests.memory: 50Mi
+    limits.cpu: "100m"
+    limits.memory: 50Mi
