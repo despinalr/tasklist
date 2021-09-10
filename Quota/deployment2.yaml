@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tasklist
+  name: tasklist2
   namespace: quotaexample
   labels:
-    app: tasklist
+    app: tasklist2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tasklist
+      app: tasklist2
   template:
     metadata:
       labels:
-        app: tasklist
+        app: tasklist2
     spec:
       containers:
-      - name: tasklist
+      - name: tasklist2
         image: despinalr/tasklist
         resources:
           requests:
-            cpu: 35m
-            memory: 25Mi
+            cpu: 40m
+            memory: 30Mi
           limits:
-            cpu: 35m
-            memory: 25Mi
+            cpu: 40m
+            memory: 30Mi

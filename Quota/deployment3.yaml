@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tasklist3
+  namespace: quotaexample
+  labels:
+    app: tasklist3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tasklist3
+  template:
+    metadata:
+      labels:
+        app: tasklist3
+    spec:
+      containers:
+      - name: tasklist3
+        image: despinalr/tasklist

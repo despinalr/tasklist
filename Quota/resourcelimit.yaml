@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: resource-limit
+  namespace: quotaexample
+spec:
+  limits:
+    - type: Container
+      min:
+        cpu: "30m"
+        memory: 20Mi
+      max:
+        cpu: "50m"
+        memory: 40Mi
